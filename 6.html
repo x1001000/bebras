@@ -1,0 +1,209 @@
+
+<!-- saved from url=(0043)http://bebras.csie.ntnu.edu.tw/tests/task/6 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>Bebras 國際運算思維挑戰賽</title>
+        <link rel="stylesheet" href="./6_files/bootstrap.min.css"> <!-- 3.3.7 -->
+        <link rel="stylesheet" href="./6_files/custom.css">
+        
+        <link rel="stylesheet" href="./6_files/font-awesome.min.css"> <!-- 4.6.3 -->
+        <script src="./6_files/jquery-2.1.1.min.js.下載"></script> <!-- 2.0.3 -->
+        <script src="./6_files/bootstrap.min.js.下載"></script> <!-- 3.3.4 -->
+        
+        <script src="./6_files/bootstrap-editable.min.js.下載"></script>
+        <link href="./6_files/bootstrap-editable.css" rel="stylesheet">
+
+        <!--datetime picker-->
+        <script src="./6_files/bootstrap-datepicker.min.js.下載"></script> <!-- 1.6.4 -->
+        <script src="./6_files/bootstrap-datepicker.zh-TW.min.js.下載"></script>
+        <link rel="stylesheet" href="./6_files/bootstrap-datepicker.min.css">
+        
+        <!--text editor-->
+        <script src="./6_files/ckeditor.js.下載"></script><style>.cke{visibility:hidden;}</style> <!-- 4.5.10 -->
+        <script src="./6_files/jquery.js.下載"></script> <!-- 4.5.10 -->
+        
+        <!--tags input-->
+        <link rel="stylesheet" href="./6_files/bootstrap-tagsinput.css"> <!-- 0.4.2 -->
+        <script src="./6_files/bootstrap-tagsinput.min.js.下載"></script> <!-- 0.4.2 -->
+
+        <!--chart.js-->
+        <script src="./6_files/Chart.js.下載"></script>
+
+        <!--Papa Parse 4.1.2 -->
+        <script src="./6_files/papaparse.min.js.下載"></script>
+
+        <script src="./6_files/Sortable.min.js.下載"></script>
+
+        <link rel="stylesheet" href="./6_files/tablesorter.css"> <!-- 0.4.2 -->
+        <script src="./6_files/jquery.tablesorter.min.js.下載"></script>
+
+        <script src="./6_files/alert.js.下載"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-default navbar-fixed-top" style="background-color:#5ebbe7;">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toogle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="http://bebras.csie.ntnu.edu.tw/"><img src="./6_files/bebras.png" height="40px"></a>
+                        </div>
+                        
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-left">
+                                <li><a href="http://bebras.csie.ntnu.edu.tw/"><img src="./6_files/nav-news.png" height="40px"></a></li>
+                                <li><a href="http://bebras.csie.ntnu.edu.tw/about"><img src="./6_files/nav-about.png" height="40px"></a></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown"><img src="./6_files/nav-try.png" height="40px"></a>
+                                    <ul class="dropdown-menu">
+                                        
+                                        
+                                        <li><a href="http://bebras.csie.ntnu.edu.tw/tests/demo/benjamin">五、六年級</a></li>
+                                        
+                                        
+                                        
+                                        <li><a href="http://bebras.csie.ntnu.edu.tw/tests/demo/cadet">七、八年級</a></li>
+                                        
+                                        
+                                        
+                                        <li><a href="http://bebras.csie.ntnu.edu.tw/tests/demo/junior">九、十年級</a></li>
+                                        
+                                        
+                                        
+                                        <li><a href="http://bebras.csie.ntnu.edu.tw/tests/demo/senior">十一、十二年級</a></li>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                    </ul>
+                                </li>
+                                <li><a href="http://bebras.csie.ntnu.edu.tw/contact"><img src="./6_files/nav-contact.png" height="40px"></a></li>
+                                
+                                <li><a href="http://bebras.csie.ntnu.edu.tw/tests/login"><img src="./6_files/nav-start.png" height="40px"></a></li>
+                                
+                                
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                
+                                <li class="nav-login"><a href="http://bebras.csie.ntnu.edu.tw/tests/logout">登出</a></li>
+                                
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="container container-top">
+            <div class="row" style="margin-bottom:50px;">
+                
+                <div class="title text-right">
+                    
+
+<div class="title text-left">
+    <img src="./6_files/junior.png" height="100px">
+</div>
+
+
+                </div>
+                
+                <div class="col-md-12">
+                    <div class="alert-container">
+                    
+                    
+                    
+                    </div>
+                    
+<div class="panel panel-default" style="margin:30px 0;">
+    <div class="panel-heading">
+        <h4>派對彩帶</h4>
+    </div>
+    <div class="panel-body" style="padding:25px;">
+        <div class="row">
+            <div class="col-md-12">
+                <p><big>小畢的生日快到了，他想要辦一場生日派對來慶祝。為了布置派對場地，小畢買了一卷彩帶，這卷彩帶有著如下圖所示每四格一組（黃紅紅藍）的重複樣式。小畢的姊姊也很喜歡這卷彩帶，因此趁小畢不注意的時候從彩帶中間剪下了一段，缺少的那一段在下圖以 「. . .」表示。小畢的姊姊說 ：「如果你能猜出剪下來的這段彩帶有幾個格子，我就把彩帶還改你。」</big></p>
+
+<p><big><img alt="" src="./6_files/2016-CZ-01.png" style="width:100%"></big></p>
+
+<p><big>請問下列哪一個選項可能是姊姊剪下彩帶的格子數？</big></p>
+
+            </div>
+        </div>
+        <form id="form" class="form-horizontal" method="post">
+            <div class="row" style="margin-top:15px;">
+                <div class="col-md-12">
+                    
+
+                    
+                    
+                    
+                    <div class="col-md-12" style="margin-top:15px;">
+                        <input type="radio" name="answer" value="09218425b7d12f404cc8347b9a1bda7a" required="">&nbsp;&nbsp;<big>31</big>
+                    </div>
+                    
+                    
+                    
+                    <div class="col-md-12" style="margin-top:15px;">
+                        <input type="radio" name="answer" value="a30cedac95f938ef214b12e0d9b8c30a" required="">&nbsp;&nbsp;<big>32</big>
+                    </div>
+                    
+                    
+                    
+                    <div class="col-md-12" style="margin-top:15px;">
+                        <input type="radio" name="answer" value="bd189149977afac1ccf71e9154fa821f" required="">&nbsp;&nbsp;<big>34</big>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    <div class="col-md-12" style="margin-top:15px;">
+                        <input type="radio" name="answer" value="dac3cf5d0d24e1719b3093ff3b67e273" required="">&nbsp;&nbsp;<big>33</big>
+                    </div>
+                    
+                    
+                    
+                    <input type="text" class="is-skip" name="is-skip" style="margin-top:15px;" hidden="" required="">
+                </div>
+            </div>
+            <div class="text-center input-margin col-md-12">
+                <div class="row">
+                    
+                    <a class="btn btn-default panel-span submit-button" href="http://bebras.csie.ntnu.edu.tw/tests/task/5" role="button"><i class="fa fa-chevron-left" aria-hidden="true"></i> 回到上一題</a>
+                    
+                    
+                    <button type="submit" class="btn btn-danger panel-span submit-button" onclick="set_skip(true)" formnovalidate="">放棄作答此題</button>
+                    <button type="submit" class="btn btn-primary panel-span submit-button" onclick="set_skip(false)">確定送出</button>
+                    
+                    
+                    <a class="btn btn-default panel-span submit-button" href="http://bebras.csie.ntnu.edu.tw/tests/task/7" role="button">跳至下一題 <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    
+                </div>
+                
+                <br>
+                <div class="row">
+                    <p>尚有 15 題未作答</p>
+                </div>
+                
+            </div> 
+        </form>
+    </div>
+</div>
+<script>
+function set_skip(skip){
+    $('.is-skip').val(skip.toString());
+}
+</script>
+
+                </div>
+            </div>
+        </div>
+    
+</body></html>
