@@ -1,0 +1,253 @@
+
+<!-- saved from url=(0043)http://bebras.csie.ntnu.edu.tw/tests/task/8 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>Bebras 國際運算思維挑戰賽</title>
+        <link rel="stylesheet" href="./8_files/bootstrap.min.css"> <!-- 3.3.7 -->
+        <link rel="stylesheet" href="./8_files/custom.css">
+        
+        <link rel="stylesheet" href="./8_files/font-awesome.min.css"> <!-- 4.6.3 -->
+        <script src="./8_files/jquery-2.1.1.min.js"></script> <!-- 2.0.3 -->
+        <script src="./8_files/bootstrap.min.js"></script> <!-- 3.3.4 -->
+        
+        <script src="./8_files/bootstrap-editable.min.js"></script>
+        <link href="./8_files/bootstrap-editable.css" rel="stylesheet">
+
+        <!--datetime picker-->
+        <script src="./8_files/bootstrap-datepicker.min.js"></script> <!-- 1.6.4 -->
+        <script src="./8_files/bootstrap-datepicker.zh-TW.min.js"></script>
+        <link rel="stylesheet" href="./8_files/bootstrap-datepicker.min.css">
+        
+        <!--text editor-->
+        <script src="./8_files/ckeditor.js"></script><style>.cke{visibility:hidden;}</style> <!-- 4.5.10 -->
+        <script src="./8_files/jquery.js"></script> <!-- 4.5.10 -->
+        
+        <!--tags input-->
+        <link rel="stylesheet" href="./8_files/bootstrap-tagsinput.css"> <!-- 0.4.2 -->
+        <script src="./8_files/bootstrap-tagsinput.min.js"></script> <!-- 0.4.2 -->
+
+        <!--chart.js-->
+        <script src="./8_files/Chart.js"></script>
+
+        <!--Papa Parse 4.1.2 -->
+        <script src="./8_files/papaparse.min.js"></script>
+
+        <script src="./8_files/Sortable.min.js"></script>
+
+        <link rel="stylesheet" href="./8_files/tablesorter.css"> <!-- 0.4.2 -->
+        <script src="./8_files/jquery.tablesorter.min.js"></script>
+
+        <script src="./8_files/alert.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-default navbar-fixed-top" style="background-color:#5ebbe7;">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toogle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="http://bebras.csie.ntnu.edu.tw/"><img src="./8_files/bebras.png" height="40px"></a>
+                        </div>
+                        
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-left">
+                                <li><a href="http://bebras.csie.ntnu.edu.tw/"><img src="./8_files/nav-news.png" height="40px"></a></li>
+                                <li><a href="http://bebras.csie.ntnu.edu.tw/about"><img src="./8_files/nav-about.png" height="40px"></a></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown"><img src="./8_files/nav-try.png" height="40px"></a>
+                                    <ul class="dropdown-menu">
+                                        
+                                        
+                                        <li><a href="http://bebras.csie.ntnu.edu.tw/tests/demo/benjamin">五、六年級</a></li>
+                                        
+                                        
+                                        
+                                        <li><a href="http://bebras.csie.ntnu.edu.tw/tests/demo/cadet">七、八年級</a></li>
+                                        
+                                        
+                                        
+                                        <li><a href="http://bebras.csie.ntnu.edu.tw/tests/demo/junior">九、十年級</a></li>
+                                        
+                                        
+                                        
+                                        <li><a href="http://bebras.csie.ntnu.edu.tw/tests/demo/senior">十一、十二年級</a></li>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                    </ul>
+                                </li>
+                                <li><a href="http://bebras.csie.ntnu.edu.tw/contact"><img src="./8_files/nav-contact.png" height="40px"></a></li>
+                                
+                                <li><a href="http://bebras.csie.ntnu.edu.tw/tests/login"><img src="./8_files/nav-start.png" height="40px"></a></li>
+                                
+                                
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                
+                                <li class="nav-login"><a href="http://bebras.csie.ntnu.edu.tw/tests/logout">登出</a></li>
+                                
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="container container-top">
+            <div class="row" style="margin-bottom:50px;">
+                
+                <div class="title text-right">
+                    
+
+<div class="title text-left">
+    <img src="./8_files/junior.png" height="100px">
+</div>
+
+
+                </div>
+                
+                <div class="col-md-12">
+                    <div class="alert-container">
+                    
+                    
+                    
+                    </div>
+                    
+<div class="panel panel-default" style="margin:30px 0;">
+    <div class="panel-heading">
+        <h4>入侵偵測</h4>
+    </div>
+    <div class="panel-body" style="padding:25px;">
+        <div class="row">
+            <div class="col-md-12">
+                <p>在海狸博物館裡有一套能偵測入侵者的智能安全系統，所謂入侵者是指未經由入口進入博物館的人。</p>
+
+<p>當有人進出任一個房間時，系統會準確地偵測每個房間的人數，並記錄在表格裡。(註：同一時間可能有多人進出房間)</p>
+
+<p>下表為智能安全系統每個時間點的人數紀錄，下圖為博物館的房間格局，博物館共有四個房間，編號分別為Room1到Room4，而入口處就在圖中Room1的上方。　 　 　 　 　 　 　</p>
+
+<table border="1">
+	<tbody>
+		<tr>
+			<td style="width:70px;  text-align: center;">Time</td>
+			<td style="width:70px;  text-align: center;">Room1</td>
+			<td style="width:70px;  text-align: center;">Room2</td>
+			<td style="width:70px;  text-align: center;">Room3</td>
+			<td style="width:70px;  text-align: center;">Room4</td>
+			<td rowspan="8"><img alt="" src="./8_files/2017-DE-03_zh.png" style="width:300px"></td>
+		</tr>
+		<tr>
+			<td style="width:70px;  text-align: center;">10:00</td>
+			<td style="width:70px;  text-align: center;">2</td>
+			<td style="width:70px;  text-align: center;">0</td>
+			<td style="width:70px;  text-align: center;">0</td>
+			<td style="width:70px;  text-align: center;">0</td>
+		</tr>
+		<tr>
+			<td style="width:70px;  text-align: center;">10:07</td>
+			<td style="width:70px;  text-align: center;">3</td>
+			<td style="width:70px;  text-align: center;">0</td>
+			<td style="width:70px;  text-align: center;">0</td>
+			<td style="width:70px;  text-align: center;">0</td>
+		</tr>
+		<tr>
+			<td style="width:70px;  text-align: center;">10:08</td>
+			<td style="width:70px;  text-align: center;">2</td>
+			<td style="width:70px;  text-align: center;">1</td>
+			<td style="width:70px;  text-align: center;">0</td>
+			<td style="width:70px;  text-align: center;">0</td>
+		</tr>
+		<tr>
+			<td style="width:70px;  text-align: center;">10:12</td>
+			<td style="width:70px;  text-align: center;">4</td>
+			<td style="width:70px;  text-align: center;">1</td>
+			<td style="width:70px;  text-align: center;">1</td>
+			<td style="width:70px;  text-align: center;">0</td>
+		</tr>
+		<tr>
+			<td style="width:70px;  text-align: center;">10:13</td>
+			<td style="width:70px;  text-align: center;">2</td>
+			<td style="width:70px;  text-align: center;">2</td>
+			<td style="width:70px;  text-align: center;">3</td>
+			<td style="width:70px;  text-align: center;">0</td>
+		</tr>
+		<tr>
+			<td style="width:70px;  text-align: center;">10:17</td>
+			<td style="width:70px;  text-align: center;">5</td>
+			<td style="width:70px;  text-align: center;">2</td>
+			<td style="width:70px;  text-align: center;">2</td>
+			<td style="width:70px;  text-align: center;">1</td>
+		</tr>
+		<tr>
+			<td style="width:70px;  text-align: center;">10:20</td>
+			<td style="width:70px;  text-align: center;">4</td>
+			<td style="width:70px;  text-align: center;">1</td>
+			<td style="width:70px;  text-align: center;">2</td>
+			<td style="width:70px;  text-align: center;">2</td>
+		</tr>
+	</tbody>
+</table>
+
+<p></p>
+
+<p><strong class="text-info">系統會在10點幾分首次偵測到入侵者？（請填入一個0到59之間的整數；作答範例：0）</strong></p>
+            </div>
+        </div>
+        <form id="form" class="form-horizontal" method="post">
+            <div class="row" style="margin-top:15px;">
+                <div class="col-md-12">
+                    
+
+                    
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <input type="text" class="form-control" name="answer" placeholder="請在此作答..." style="margin-top:15px;" required="">
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <input type="text" class="is-skip" name="is-skip" style="margin-top:15px;" hidden="" required="">
+                </div>
+            </form></div>
+            <div class="text-center input-margin col-md-12">
+                <div class="row">
+                    
+                    <a class="btn btn-default panel-span submit-button" href="http://bebras.csie.ntnu.edu.tw/tests/task/7" role="button"><i class="fa fa-chevron-left" aria-hidden="true"></i> 回到上一題</a>
+                    
+<!--                    
+                    <button type="submit" class="btn btn-danger panel-span submit-button" onclick="set_skip(true)" formnovalidate="">放棄作答此題</button>
+                    <button type="submit" class="btn btn-primary panel-span submit-button" onclick="set_skip(false)">確定送出</button>
+-->                    
+                    
+                    <a class="btn btn-default panel-span submit-button" href="http://bebras.csie.ntnu.edu.tw/tests/task/9" role="button">跳至下一題 <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    
+                </div>
+                
+                <br>
+                <div class="row">
+                    <p>尚有 15 題未作答</p>
+                </div>
+                
+            </div> 
+        
+    </div>
+</div>
+<script>
+function set_skip(skip){
+    $('.is-skip').val(skip.toString());
+}
+</script>
+
+                </div>
+            </div>
+        
+    
+</body></html>

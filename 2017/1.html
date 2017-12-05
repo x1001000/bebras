@@ -1,0 +1,249 @@
+
+<!-- saved from url=(0043)http://bebras.csie.ntnu.edu.tw/tests/task/1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>Bebras 國際運算思維挑戰賽</title>
+        <link rel="stylesheet" href="./1_files/bootstrap.min.css"> <!-- 3.3.7 -->
+        <link rel="stylesheet" href="./1_files/custom.css">
+        
+        <link rel="stylesheet" href="./1_files/font-awesome.min.css"> <!-- 4.6.3 -->
+        <script src="./1_files/jquery-2.1.1.min.js"></script> <!-- 2.0.3 -->
+        <script src="./1_files/bootstrap.min.js"></script> <!-- 3.3.4 -->
+        
+        <script src="./1_files/bootstrap-editable.min.js"></script>
+        <link href="./1_files/bootstrap-editable.css" rel="stylesheet">
+
+        <!--datetime picker-->
+        <script src="./1_files/bootstrap-datepicker.min.js"></script> <!-- 1.6.4 -->
+        <script src="./1_files/bootstrap-datepicker.zh-TW.min.js"></script>
+        <link rel="stylesheet" href="./1_files/bootstrap-datepicker.min.css">
+        
+        <!--text editor-->
+        <script src="./1_files/ckeditor.js"></script><style>.cke{visibility:hidden;}</style> <!-- 4.5.10 -->
+        <script src="./1_files/jquery.js"></script> <!-- 4.5.10 -->
+        
+        <!--tags input-->
+        <link rel="stylesheet" href="./1_files/bootstrap-tagsinput.css"> <!-- 0.4.2 -->
+        <script src="./1_files/bootstrap-tagsinput.min.js"></script> <!-- 0.4.2 -->
+
+        <!--chart.js-->
+        <script src="./1_files/Chart.js"></script>
+
+        <!--Papa Parse 4.1.2 -->
+        <script src="./1_files/papaparse.min.js"></script>
+
+        <script src="./1_files/Sortable.min.js"></script>
+
+        <link rel="stylesheet" href="./1_files/tablesorter.css"> <!-- 0.4.2 -->
+        <script src="./1_files/jquery.tablesorter.min.js"></script>
+
+        <script src="./1_files/alert.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-default navbar-fixed-top" style="background-color:#5ebbe7;">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toogle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="http://bebras.csie.ntnu.edu.tw/"><img src="./1_files/bebras.png" height="40px"></a>
+                        </div>
+                        
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-left">
+                                <li><a href="http://bebras.csie.ntnu.edu.tw/"><img src="./1_files/nav-news.png" height="40px"></a></li>
+                                <li><a href="http://bebras.csie.ntnu.edu.tw/about"><img src="./1_files/nav-about.png" height="40px"></a></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown"><img src="./1_files/nav-try.png" height="40px"></a>
+                                    <ul class="dropdown-menu">
+                                        
+                                        
+                                        <li><a href="http://bebras.csie.ntnu.edu.tw/tests/demo/benjamin">五、六年級</a></li>
+                                        
+                                        
+                                        
+                                        <li><a href="http://bebras.csie.ntnu.edu.tw/tests/demo/cadet">七、八年級</a></li>
+                                        
+                                        
+                                        
+                                        <li><a href="http://bebras.csie.ntnu.edu.tw/tests/demo/junior">九、十年級</a></li>
+                                        
+                                        
+                                        
+                                        <li><a href="http://bebras.csie.ntnu.edu.tw/tests/demo/senior">十一、十二年級</a></li>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                    </ul>
+                                </li>
+                                <li><a href="http://bebras.csie.ntnu.edu.tw/contact"><img src="./1_files/nav-contact.png" height="40px"></a></li>
+                                
+                                <li><a href="http://bebras.csie.ntnu.edu.tw/tests/login"><img src="./1_files/nav-start.png" height="40px"></a></li>
+                                
+                                
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                
+                                <li class="nav-login"><a href="http://bebras.csie.ntnu.edu.tw/tests/logout">登出</a></li>
+                                
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="container container-top">
+            <div class="row" style="margin-bottom:50px;">
+                
+                <div class="title text-right">
+                    
+
+<div class="title text-left">
+    <img src="./1_files/junior.png" height="100px">
+</div>
+
+
+                </div>
+                
+                <div class="col-md-12">
+                    <div class="alert-container">
+                    
+                    
+                    
+                    </div>
+                    
+<div class="panel panel-default" style="margin:30px 0;">
+    <div class="panel-heading">
+        <h4>文字編輯app</h4>
+    </div>
+    <div class="panel-body" style="padding:25px;">
+        <div class="row">
+            <div class="col-md-12">
+                <p>海狸Ada發現有一款新的聊天軟體，可以透過特殊符號傳送有特色的文字，特殊符號的用法如下所示:</p>
+
+<ul>
+	<li>&nbsp;* 表示<strong>粗體</strong></li>
+</ul>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 例如: 傳送 *beaver* 會顯示 &nbsp;<strong>beaver</strong></p>
+
+<ul>
+	<li>&nbsp;/ 表示<em>斜體</em></li>
+</ul>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 例如: 傳送 /beaver/ 會顯示 &nbsp;<em>beaver</em></p>
+
+<ul>
+	<li>&nbsp;_ 表示<u>底線</u></li>
+</ul>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 例如: 傳送 _beaver_ 會顯示&nbsp;<u>beaver</u></p>
+
+<ul>
+	<li>&nbsp;$ 表示<code>強調</code></li>
+</ul>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 例如: 傳送 $beaver$ &nbsp; 會顯示&nbsp;<code>beaver</code></p>
+
+<p>當然，也可以使用組合的文字功能，例如:</p>
+
+<ul>
+	<li>傳送 _/beaver/_ 會顯示 &nbsp;<em><u>beaver</u></em></li>
+	<li>傳送 /_beaver_/ 會顯示 &nbsp;<em><u>beaver</u></em></li>
+	<li>傳送 $_beaver_$ &nbsp; 會顯示&nbsp;<code><u>beaver</u></code></li>
+</ul>
+
+<p>這個軟體也有類似傳送圖片的功能，例如：</p>
+
+<ul>
+	<li>傳送 :birthday: 會顯示&nbsp;<img src="./1_files/2017-IT-09_cake.png" style="width:30px"></li>
+	<li>傳送 :island: 會顯示&nbsp;<img src="./1_files/2017-IT-09_island.png" style="width:30px"></li>
+	<li>傳送 :house: 會顯示<img src="./1_files/2017-IT-09_house.png" style="width:30px"></li>
+</ul>
+
+<p><strong class="text-info">請問Ada要如何利用這個聊天軟體發送下面的訊息?</strong></p>
+
+<p><tt><strong>You</strong>&nbsp;are invited to a&nbsp;<u>super</u>&nbsp;<img src="./1_files/2017-IT-09_cake.png" style="width:30px">&nbsp;party at&nbsp;<u><strong>the</strong></u><img src="./1_files/2017-IT-09_house.png" style="width:30px">&nbsp;on the&nbsp;<img src="./1_files/2017-IT-09_island.png" style="width:30px">&nbsp;with&nbsp;<code><em>great music and food</em></code>. See you&nbsp;<u>there!</u></tt></p>
+            </div>
+        </div>
+        <form id="form" class="form-horizontal" method="post">
+            <div class="row" style="margin-top:15px;">
+                <div class="col-md-12">
+                    
+
+                    
+                    
+                    
+                    <div class="col-md-12" style="margin-top:15px;">
+                        <input type="radio" name="answer" value="a623cc57ac4bf23e40951e5a55ccbe77" required="">&nbsp;&nbsp;<p>*You* are invited to a _super_ :birthday: party at */the/* :house: on the island with $*great music and food*$. See you _there!_</p>
+
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    <div class="col-md-12" style="margin-top:15px;">
+                        <input type="radio" name="answer" value="18f0ec23f7cf0bdfc3031b171b1d78b7" required="">&nbsp;&nbsp;*You* are invited to a _super_ birthday party at */the/* :house: on the :island: with $/great music and food/$. See you /there!/
+                    </div>
+                    
+                    
+                    
+                    <div class="col-md-12" style="margin-top:15px;">
+                        <input type="radio" name="answer" value="0d7b800a4a9d02ad2af590eee5f36c2d" required="">&nbsp;&nbsp;*You* are invited to a _super_ :birthday: party at *_the_* :house: on the :island: with $/great music and food/$. See you _there!_
+                    </div>
+                    
+                    
+                    
+                    <div class="col-md-12" style="margin-top:15px;">
+                        <input type="radio" name="answer" value="98e8bcc55ad82f6ccec0d83098136045" required="">&nbsp;&nbsp;*You* are invited to a /super/ :birthday: party at *_the_* house on the :island: with $great music and food$. See you /there!/
+                    </div>
+                    
+                    
+                    
+                    <input type="text" class="is-skip" name="is-skip" style="margin-top:15px;" hidden="" required="">
+                </div>
+            </div>
+            <div class="text-center input-margin col-md-12">
+                <div class="row">
+                    
+                    <a class="btn btn-default panel-span submit-button" href="http://bebras.csie.ntnu.edu.tw/tests/task/0" role="button"><i class="fa fa-chevron-left" aria-hidden="true"></i> 回到上一題</a>
+                    
+<!--                    
+                    <button type="submit" class="btn btn-danger panel-span submit-button" onclick="set_skip(true)" formnovalidate="">放棄作答此題</button>
+                    <button type="submit" class="btn btn-primary panel-span submit-button" onclick="set_skip(false)">確定送出</button>
+-->                    
+                    
+                    <a class="btn btn-default panel-span submit-button" href="http://bebras.csie.ntnu.edu.tw/tests/task/2" role="button">跳至下一題 <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    
+                </div>
+                
+                <br>
+                <div class="row">
+                    <p>尚有 15 題未作答</p>
+                </div>
+                
+            </div> 
+        </form>
+    </div>
+</div>
+<script>
+function set_skip(skip){
+    $('.is-skip').val(skip.toString());
+}
+</script>
+
+                </div>
+            </div>
+        </div>
+    
+</body></html>

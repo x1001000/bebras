@@ -1,0 +1,13 @@
+th.header {
+    cursor: pointer;
+    background-image: url(/static/img/tablesorter/arrows.gif);
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-right: 20px
+}
+th.headerSortUp {
+    background-image: url(/static/img/tablesorter/asc.gif)
+}
+th.headerSortDown {
+    background-image: url(/static/img/tablesorter/desc.gif)
+}
